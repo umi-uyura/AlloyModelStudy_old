@@ -1,3 +1,6 @@
 Alloy
-  Window.container
-    Label#label(onClick="doClick") Hello, World
+  Collection(src="ad_address")
+  Window.container(onClose="cleanup")
+    ListView#adList
+      ListSection(dataCollection="ad_address", dataTransform="transformAddress")
+        ListItem(title="{listitem}")
