@@ -27,7 +27,7 @@ exports.definition = {
       type: 'sql',
       collection_name: 'ad_address',
       idAttribute: 'id',
-      db_file: 'zenkoku.sqlite3'
+      db_file: '13tokyo.sqlite3'
     }
   },
   extendModel: function(Model) {
