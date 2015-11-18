@@ -1,0 +1,22 @@
+.addresstemplate-base
+  layout "vertical"
+
+.addresstemplate-label
+  left 0
+  width "Ti.UI.SIZE"
+  ellipsize true
+  wordWrap false
+  horizontalWrap false
+  color "black"
+
+.addresstemplate-label[platform=ios]
+  minimumFontSize 16
+
+.addresstemplate-label[platform=android]
+  ellipsize "Ti.UI.TEXT_ELLIPSIZE_TRUNCATE_END"
+
+.addresstemplate-label-zip[platform=ios]
+  font fontSize 12
+
+.addresstemplate-label-zip[platform=android]
+  font fontSize 36

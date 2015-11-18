@@ -1,0 +1,10 @@
+Alloy
+  Collection(src="ad_address")
+  ListView#addressList(defaultItemTemplate="addressTemplate")
+    Templates
+      ItemTemplate.addresstemplate(name="addressTemplate")
+        View.addresstemplate-base
+          Label.addresstemplate-label.addresstemplate-label-zip(bindId="zip")
+          Label.addresstemplate-label(bindId="listitem")
+    ListSection(headerTitle="Address List", dataCollection="ad_address", dataTransform="transformAddress")
+      ListItem(zip:text="{zip}", listitem:text="{listitem}")

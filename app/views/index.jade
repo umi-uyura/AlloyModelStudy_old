@@ -1,6 +1,6 @@
 Alloy
-  Collection(src="ad_address")
-  Window.container(onClose="cleanup")
-    ListView#adList
-      ListSection(dataCollection="ad_address", dataTransform="transformAddress")
-        ListItem(title="{listitem}")
+  NavigationWindow(platform="ios")
+    Window.container(title="AlloyModelStudy", onClose="cleanup")
+      Require(type="view", src="index_body")
+  Window.container(title="AlloyModelStudy", onClose="cleanup", platform="android")
+    Require(type="view", src="index_body")
